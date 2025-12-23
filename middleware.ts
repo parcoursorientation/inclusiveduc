@@ -1,0 +1,40 @@
+
+import { withAuth } from "next-auth/middleware";
+
+export default withAuth({
+  pages: {
+    signIn: "/login",
+  },
+  callbacks: {
+    authorized: ({ token, req }) => {
+      const { pathname } = req.nextUrl;
+
+      // Si l'utilisateur n'est pas authentifié, il ne peut pas accéder au dashboard ou à l'admin
+      if (!token) {
+        return false;
+      }
+
+      // Pour les routes d'admin, vérifier si l'utilisateur a le rôle ADMIN
+      if (pathname.startsWith('/admin')) {
+        return token.role === 'ADMIN';
+      }
+
+      // Pour les autres routes protégées (dashboard), être authentifié suffit
+      return true;
+    },
+  },
+});
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public folder
+     */
+    "/((?!api|_next/static|_next/image|favicon.ico|public).*)",
+  ],
+};
