@@ -689,7 +689,7 @@ export default function Resources() {
         {filteredVisuals.length > 0 && (
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 font-arabic text-gray-800 text-center">
-              موارد بصر��ة
+              موارد بصرية
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {filteredVisuals.map((resource, index) => (
