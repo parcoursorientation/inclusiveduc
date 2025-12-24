@@ -1,40 +1,54 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram, Send, Heart } from 'lucide-react'
+import Link from "next/link";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Youtube,
+  Instagram,
+  Send,
+  Heart,
+} from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { title: 'الرئيسية', href: '/' },
-    { title: 'ما هي التربية الدامجة؟', href: '/what-is-inclusive-education' },
-    { title: 'دليل المدرسين', href: '/teachers-guide' },
-    { title: 'دليل الأسر', href: '/families-guide' },
-    { title: 'الإعاقة وأنواعها', href: '/disability-types' },
-    { title: 'الأسئلة الشائعة', href: '/faq' }
-  ]
+    { title: "الرئيسية", href: "/" },
+    { title: "ما هي التربية الدامجة؟", href: "/what-is-inclusive-education" },
+    { title: "دليل المدرسين", href: "/teachers-guide" },
+    { title: "دليل الأسر", href: "/families-guide" },
+    { title: "الإعاقة وأنواعها", href: "/disability-types" },
+    { title: "الأسئلة الشائعة", href: "/faq" },
+  ];
 
   const resources = [
-    { title: 'نماذج قابلة للتحميل', href: '/resources' },
-    { title: 'التشريعات الوطنية', href: '/legislation' },
-    { title: 'الأخبار والأنشطة', href: '/news' },
-    { title: 'مخاطبونا', href: '/personas' },
-    { title: 'اتصل بنا', href: '/contact' }
-  ]
+    { title: "نماذج قابلة للتحميل", href: "/resources" },
+    { title: "التشريعات الوطنية", href: "/legislation" },
+    { title: "الأخبار والأنشطة", href: "/news" },
+    { title: "مخاطبونا", href: "/personas" },
+    { title: "اتصل بنا", href: "/contact" },
+  ];
 
   const contactInfo = [
-    { icon: Mail, label: 'البريد الإلكتروني', value: 'info@inclusive-education.ma' },
-    { icon: Phone, label: 'الهاتف', value: '+212 5XX XXX XXX' },
-    { icon: MapPin, label: 'العنوان', value: 'المغرب، الرباط' }
-  ]
+    {
+      icon: Mail,
+      label: "البريد الإلكتروني",
+      value: "info@educ-inclusive.com",
+    },
+    { icon: Phone, label: "الهاتف", value: "+212 5XX XXX XXX" },
+    { icon: MapPin, label: "العنوان", value: "المغرب، طنجة" },
+  ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'فيسبوك' },
-    { icon: Twitter, href: '#', label: 'تويتر' },
-    { icon: Youtube, href: '#', label: 'يوتيوب' },
-    { icon: Instagram, href: '#', label: 'انستغرام' }
-  ]
+    { icon: Facebook, href: "#", label: "فيسبوك" },
+    { icon: Twitter, href: "#", label: "تويتر" },
+    { icon: Youtube, href: "#", label: "يوتيوب" },
+    { icon: Instagram, href: "#", label: "انستغرام" },
+  ];
 
   return (
     <footer className="bg-gray-900 text-white" role="contentinfo">
@@ -47,16 +61,19 @@ export default function Footer() {
               <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
                 <Heart className="h-6 w-6 text-white" />
               </div>
-              <span className="font-bold text-xl font-arabic">التربية الدامجة</span>
+              <span className="font-bold text-xl font-arabic">
+                التربية الدامجة
+              </span>
             </div>
             <p className="text-gray-300 leading-relaxed font-arabic text-sm mb-6">
-              منصة متكاملة لدعم التربية الدامجة للأطفال في وضعية إعاقة. نؤمن بأن جميع الأطفال يمكنهم أن يتعلموا، والدمج حق وليس امتيازًا.
+              منصة متكاملة لدعم التربية الدامجة للأطفال في وضعية إعاقة. نؤمن بأن
+              جميع الأطفال يمكنهم أن يتعلموا، والدمج حق وليس امتيازًا.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-reverse space-x-3">
               {socialLinks.map((social) => {
-                const Icon = social.icon
+                const Icon = social.icon;
                 return (
                   <a
                     key={social.label}
@@ -68,7 +85,7 @@ export default function Footer() {
                   >
                     <Icon className="h-5 w-5" />
                   </a>
-                )
+                );
               })}
             </div>
           </div>
@@ -112,20 +129,27 @@ export default function Footer() {
           {/* Contact & Newsletter */}
           <div>
             <h3 className="font-bold text-lg mb-6 font-arabic">تواصل معنا</h3>
-            
+
             {/* Contact Information */}
             <div className="space-y-3 mb-6">
               {contactInfo.map((info) => {
-                const Icon = info.icon
+                const Icon = info.icon;
                 return (
-                  <div key={info.label} className="flex items-start space-x-reverse space-x-3">
+                  <div
+                    key={info.label}
+                    className="flex items-start space-x-reverse space-x-3"
+                  >
                     <Icon className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <div>
-                      <div className="text-sm text-gray-400 font-arabic">{info.label}</div>
-                      <div className="text-gray-300 font-arabic">{info.value}</div>
+                      <div className="text-sm text-gray-400 font-arabic">
+                        {info.label}
+                      </div>
+                      <div className="text-gray-300 font-arabic">
+                        {info.value}
+                      </div>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
 
@@ -160,24 +184,36 @@ export default function Footer() {
             <div className="text-gray-400 text-sm font-arabic">
               © {currentYear} جميع الحقوق محفوظة - منصة التربية الدامجة
             </div>
-            
-            <div className="flex flex-wrap items-center space-x-reverse space-x-6 text-sm">
-              <Link href="/privacy" className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic">
+
+            <div className="flex flex-wrap items-center gap-6 text-sm">
+              <Link
+                href="/privacy"
+                className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic"
+              >
                 سياسة الخصوصية
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic">
+              <Link
+                href="/terms"
+                className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic"
+              >
                 شروط الاستخدام
               </Link>
-              <Link href="/accessibility" className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic">
+              {/*<Link
+                href="/accessibility"
+                className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic"
+              >
                 إمكانية الوصول
               </Link>
-              <Link href="/sitemap" className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic">
+              <Link
+                href="/sitemap"
+                className="text-gray-400 hover:text-primary transition-colors duration-200 font-arabic"
+              >
                 خريطة الموقع
-              </Link>
+              </Link>*/}
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
