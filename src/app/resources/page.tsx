@@ -25,6 +25,7 @@ type DownloadFile = {
   type: string;
   size: string;
   downloads: number;
+  link?: string;
 };
 
 type DownloadCategory = {
@@ -234,20 +235,23 @@ export default function Resources() {
           type: "PDF",
           size: "5.2 MB",
           downloads: 3200,
+          link: "https://www.unicef.org/morocco/media/1481/file/Guide%20Enseignants%20VA.pdf",
         },
         {
-          title: "دليل الأسرة",
-          description: "دليل عملي للأسر",
+          title: "دليل الأسر والجمعيات",
+          description: "دليل عملي للأسر والجمعيات",
           type: "PDF",
           size: "3.8 MB",
           downloads: 2800,
+          link: "https://drive.google.com/file/d/1o8u9NUb-FK64F4ewtshySvS7LLLuWFj9/view?usp=sharing",
         },
         {
           title: "دليل المدير",
-          description: "دليل للمديرين والمنسقين",
+          description: "دليل مديري المؤسسات التعليمية",
           type: "PDF",
           size: "4.1 MB",
           downloads: 1200,
+          link: "https://drive.google.com/file/d/1bsHDkSPtHdUXBAJLnXR3czWsDVLkhocJ/view?usp=sharing",
         },
       ],
     },
@@ -637,7 +641,25 @@ export default function Resources() {
                           <div className="flex items-start justify-between mb-4">
                             <div>
                               <h4 className="font-bold font-arabic text-gray-800 mb-2">
-                                {debouncedSearch ? (
+                                {file.link ? (
+                                  <a
+                                    href={file.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-primary transition-colors hover:underline"
+                                  >
+                                    {debouncedSearch ? (
+                                      <>
+                                        {highlightText(
+                                          file.title,
+                                          debouncedSearch
+                                        )}
+                                      </>
+                                    ) : (
+                                      file.title
+                                    )}
+                                  </a>
+                                ) : debouncedSearch ? (
                                   <>
                                     {highlightText(file.title, debouncedSearch)}
                                   </>
@@ -671,10 +693,22 @@ export default function Resources() {
                             </div>
                           </div>
 
-                          <button className="w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 font-arabic flex items-center justify-center space-x-reverse space-x-2">
-                            <Download className="h-4 w-4" />
-                            <span>تحميل</span>
-                          </button>
+                          {file.link ? (
+                            <a
+                              href={file.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 font-arabic flex items-center justify-center space-x-reverse space-x-2"
+                            >
+                              <Download className="h-4 w-4" />
+                              <span>تحميل</span>
+                            </a>
+                          ) : (
+                            <button className="w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 font-arabic flex items-center justify-center space-x-reverse space-x-2">
+                              <Download className="h-4 w-4" />
+                              <span>تحميل</span>
+                            </button>
+                          )}
                         </div>
                       ))}
                     </div>
