@@ -105,7 +105,8 @@ export default function HomePage() {
               </h1>
 
               <p className="text-xl mb-8 text-blue-50 leading-relaxed font-arabic">
-                منصة متكاملة لدعم التربية الدامجة للأطفال في وضعية إعاقة. موارد، أدلة، وأدوات عملية للأسر، المعلمين، والجمعيات.
+                منصة متكاملة لدعم التربية الدامجة للأطفال في وضعية إعاقة. موارد،
+                دلائل، وأدوات عملية للأسر، المدرسين، والجمعيات.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
