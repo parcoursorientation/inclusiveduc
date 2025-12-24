@@ -289,7 +289,7 @@ export default function Resources() {
           size: "3.2 MB",
         },
         {
-          title: 'ملصق "قبلات الاختلاف"',
+          title: 'ملصق "قبول الاختلاف"',
           description: "ملصق لتشجيع قبول التنوع",
           format: "PDF",
           size: "2.8 MB",
