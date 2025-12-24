@@ -313,7 +313,7 @@ export default function Legislation() {
 
   const highCouncilRecommendations = [
     "ترسيخ حق جميع الأطفال، بمن فيهم ذوو الإعاقة أو في وضعيات صعبة، في تعليم دامج ذي جودة وعلى جميع المستويات والمسارات",
-    "الانتقال من المقاربات العلاجية/الانتقائية إلى مقاربة دامجة شاملة قائمة على إزالة الحواجز وتمكين المتعلمين وفق ��بادئ التصميم الشامل للتعلم",
+    "الانتقال من المقاربات العلاجية/الانتقائية إلى مقاربة دامجة شاملة قائمة على إزالة الحواجز وتمكين المتعلمين وفق مبادئ التصميم الشامل للتعلم",
     "إرساء مسارات مبكرة للكشف والتدخل المبكر والتتبع، مع دعم متعدد التخصصات (تربوي، نفسي، اجتماعي، صحي) داخل المدرسة وبالاستناد إلى شراكات محلية",
     "تعميم إرساء المشاريع التربوية الفردية (PPI) وخطط الدعم الفردي مع إشراك الأسرة والطفل في التخطيط واتخاذ القرار",
     "تنويع أساليب التقويم والدعم التربوي وملاءمة المناهج والطرائق ووسائل التعلم وتوفير تعددية الوسائط",
@@ -742,11 +742,16 @@ export default function Legislation() {
               احصل على نسخ PDF من جميع التشريعات والمرجعيات الرئيسية
             </p>
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <button className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200">
+              <a
+                href="https://www.unicef.org/morocco/media/1866/file/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%B1%D8%AC%D8%B9%D9%8A%20%D9%84%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D9%85%D8%AC%D8%A9%20%D9%84%D9%81%D8%A7%D8%A6%D8%AF%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%81%DB%8C%20%D9%88%D8%B6%D8%B9%D9%8A%D8%A9%20%D8%A5%D8%B9%D8%A7%D9%82%D8%A9-2019.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200 block"
+              >
                 <Download className="h-8 w-8 mx-auto mb-3" />
                 <div className="font-bold font-arabic">الإطار المرجعي</div>
-                <div className="text-sm font-arabic mt-2">PDF • 8.5 MB</div>
-              </button>
+                <div className="text-sm font-arabic mt-2">PDF • 1.4 MB</div>
+              </a>
               <button className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200">
                 <Download className="h-8 w-8 mx-auto mb-3" />
                 <div className="font-bold font-arabic">المذكرات الوزارية</div>
