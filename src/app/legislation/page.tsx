@@ -752,16 +752,28 @@ export default function Legislation() {
                 <div className="font-bold font-arabic">الإطار المرجعي</div>
                 <div className="text-sm font-arabic mt-2">PDF • 1.4 MB</div>
               </a>
-              <button className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200">
+              <a
+                href="https://drive.google.com/file/d/13944TUmvfQ2l03jlAMP0AdHHwK_m2-qr/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200 block"
+              >
                 <Download className="h-8 w-8 mx-auto mb-3" />
-                <div className="font-bold font-arabic">المذكرات الوزارية</div>
-                <div className="text-sm font-arabic mt-2">PDF • 5.2 MB</div>
-              </button>
-              <button className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200">
+                <div className="font-bold font-arabic">
+                  قرار لوزير التربية الوطنية رقم 047_19
+                </div>{" "}
+                <div className="text-sm font-arabic mt-2">PDF • 9.8 MB</div>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1jp4mpECb6V_OlCpmjujZpKQL-KA6bOwX/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary hover:bg-gray-100 rounded-lg p-6 transition-colors duration-200 block"
+              >
                 <Download className="h-8 w-8 mx-auto mb-3" />
                 <div className="font-bold font-arabic">دليل UDL</div>
-                <div className="text-sm font-arabic mt-2">PDF • 3.8 MB</div>
-              </button>
+                <div className="text-sm font-arabic mt-2">PDF • 2.5 MB</div>
+              </a>
             </div>
           </div>
         </section>
