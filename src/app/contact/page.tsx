@@ -496,8 +496,9 @@ export default function Contact() {
             <div className="text-center">
               <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
               <p className="text-gray-600 font-arabic text-lg">
-                المغرب، الرباط، حي الأكاديمية
+                المغرب، طنجة، طريق الرباط
               </p>
+
               <p className="text-gray-500 font-arabic mt-2">
                 (سيتم إضافة الخريطة قريباً)
               </p>
@@ -544,11 +545,11 @@ export default function Contact() {
 
         {/* Call to Action */}
         <section className="text-center">
-          <div className="bg-linear-to-r from-primary to-secondary text-white rounded-2xl p-12">
+          <div className="bg-linear-to-r from-primary to-secondary text-gray-800 rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-6 font-arabic">
               هل أنت مستعد للبدء؟
             </h2>
-            <p className="text-xl mb-8 text-blue-50 font-arabic leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl mb-8 text-blue-800 font-arabic leading-relaxed max-w-2xl mx-auto">
               لا تتردد في التواصل معنا. فريقنا هنا لمساعدتك في كل خطوة من رحلة
               التربية الدامجة.
             </p>
