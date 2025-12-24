@@ -73,7 +73,8 @@ export default function Contact() {
         toast({
           variant: "destructive",
           title: "خطأ في الإرسال",
-          description: data.error || "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى.",
+          description:
+            data.error || "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى.",
         });
       }
     } catch (error) {
@@ -125,14 +126,14 @@ export default function Contact() {
   const teamMembers = [
     {
       name: "د. فاطمة البقالي",
-      role: "مديرة المركز",
+      role: "المنسقة الجهوية للتربية الدامجة",
       email: "f.bouqali@inclusive-education.ma",
       phone: "+212 6XX XXX XXX",
       expertise: "التربية الدامجة والتخطيط الاستراتيجي",
     },
     {
       name: "محمد أمين",
-      role: "منسق الدعم الفني",
+      role: "منسق الدعم التقني",
       email: "m.amin@inclusive-education.ma",
       phone: "+212 6XX XXX XXX",
       expertise: "التقنيات المساعدة والتكيف",
