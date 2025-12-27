@@ -211,7 +211,7 @@ export default function WhatIsInclusiveEducation() {
                         key={i}
                         className="flex items-start space-x-reverse space-x-2"
                       >
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                         <span className="text-gray-700 font-arabic text-sm">
                           {char}
                         </span>
@@ -252,7 +252,7 @@ export default function WhatIsInclusiveEducation() {
                           key={i}
                           className="flex items-start space-x-reverse space-x-2"
                         >
-                          <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                           <span className="text-gray-700 font-arabic text-sm">
                             {advantage}
                           </span>
@@ -275,7 +275,7 @@ export default function WhatIsInclusiveEducation() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-8"
+                className="bg-linear-to-br from-blue-50 to-green-50 rounded-xl p-8"
               >
                 <h3 className="text-xl font-bold mb-6 font-arabic text-gray-800 text-center">
                   {benefit.title}
@@ -286,7 +286,7 @@ export default function WhatIsInclusiveEducation() {
                       key={i}
                       className="flex items-start space-x-reverse space-x-3"
                     >
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 shrink-0" />
                       <span className="text-gray-700 font-arabic leading-relaxed">
                         {item}
                       </span>
@@ -305,8 +305,8 @@ export default function WhatIsInclusiveEducation() {
               هل أنت مستعد لتطبيق التربية الدامجة؟
             </h2>
             <p className="text-xl mb-8 text-blue-800 font-arabic leading-relaxed max-w-2xl mx-auto">
-              اكتشف الأدوات والموارد التي ساعدك على تحقيق بيئة تعليمية دامجة
-              لجميع الأطفال
+              اكتشف الأدوات والموارد التي ستساعدك على إرساء بيئة تعليمية دامجة
+              لفائدة جميع الأطفال
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
