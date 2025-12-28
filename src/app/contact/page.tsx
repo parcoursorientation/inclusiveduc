@@ -545,7 +545,7 @@ export default function Contact() {
 
         {/* Call to Action */}
         <section className="text-center">
-          <div className="bg-linear-to-r from-primary to-secondary text-gray-800 rounded-2xl p-12">
+          <div className="bg-gray-100 text-gray-800 rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-6 font-arabic">
               هل أنت مستعد للبدء؟
             </h2>
