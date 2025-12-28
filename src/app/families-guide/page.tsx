@@ -15,6 +15,7 @@ import {
   Star,
   ChevronRight,
   Lightbulb,
+  FileText,
 } from "lucide-react";
 
 export default function FamiliesGuide() {
@@ -705,7 +706,7 @@ export default function FamiliesGuide() {
 
         {/* Call to Action */}
         <section className="text-center">
-          <div className="bg-linear-to-r from-primary to-secondary text-black-800 rounded-2xl p-12">
+          <div className="bg-gray-100 text-gray-800 rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-6 font-arabic">
               هل أنت مستعد لبدء رحلة الدمج؟
             </h2>
@@ -716,17 +717,21 @@ export default function FamiliesGuide() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/resources"
-                className="button-primary bg-white text-primary hover:bg-gray-100"
+                className="button-primary bg-white text-primary hover:bg-gray-100
+               inline-flex items-center justify-center gap-2"
               >
-                <BookOpen className="ml-2 h-5 w-5" />
-                موارد إضافية
+                <FileText className="h-5 w-5" />
+                <span>موارد إضافية</span>
               </Link>
+
               <Link
-                href="/teachers-guide"
-                className="button-secondary border-2 border-white text-white hover:bg-white hover:text-primary"
+                href="/families-guide"
+                className="button-secondary border-2 border-white text-white
+               hover:bg-white hover:text-primary
+               inline-flex items-center justify-center gap-2"
               >
-                <Users className="ml-2 h-5 w-5" />
-                دليل المدرسين
+                <Users className="h-5 w-5" />
+                <span>دليل الأسر</span>
               </Link>
             </div>
           </div>
