@@ -699,13 +699,23 @@ export default function TeachersGuide() {
               الدامجة بنجاح
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/resources" className="button-primary">
-                <FileText className="ml-2 h-5 w-5" />
-                موارد إضافية
+              <Link
+                href="/resources"
+                className="button-primary bg-white text-primary hover:bg-gray-100
+               inline-flex items-center justify-center gap-2"
+              >
+                <FileText className="h-5 w-5" />
+                <span>موارد إضافية</span>
               </Link>
-              <Link href="/families-guide" className="button-secondary">
-                <Users className="ml-2 h-5 w-5" />
-                دليل الأسر
+
+              <Link
+                href="/families-guide"
+                className="button-secondary border-2 border-white text-white
+               hover:bg-white hover:text-primary
+               inline-flex items-center justify-center gap-2"
+              >
+                <Users className="h-5 w-5" />
+                <span>دليل الأسر</span>
               </Link>
             </div>
           </div>
