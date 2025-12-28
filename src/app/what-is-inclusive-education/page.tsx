@@ -300,7 +300,7 @@ export default function WhatIsInclusiveEducation() {
 
         {/* Call to Action */}
         <section className="text-center">
-          <div className="bg-linear-to-r from-primary to-secondary text-gray-900 rounded-2xl p-12">
+          <div className="bg-gray-100 text-gray-900 rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-6 font-arabic">
               هل أنت مستعد لتطبيق التربية الدامجة؟
             </h2>
@@ -311,17 +311,21 @@ export default function WhatIsInclusiveEducation() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/teachers-guide"
-                className="button-primary bg-white text-primary hover:bg-gray-100"
+                className="button-primary bg-white text-primary hover:bg-gray-100
+               inline-flex items-center justify-center gap-2"
               >
-                دليل المدرسين
-                <GraduationCap className="mr-2 h-5 w-5" />
+                <GraduationCap className="h-5 w-5" />
+                <span>دليل المدرسين</span>
               </Link>
+
               <Link
                 href="/families-guide"
-                className="button-secondary border-2 border-white text-white hover:bg-white hover:text-primary"
+                className="button-secondary border-2 border-white text-white
+               hover:bg-white hover:text-primary
+               inline-flex items-center justify-center gap-2"
               >
-                دليل الأسر
-                <Users className="mr-2 h-5 w-5" />
+                <BookOpen className="h-5 w-5" />
+                <span>دليل الأسر</span>
               </Link>
             </div>
           </div>
