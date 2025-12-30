@@ -16,6 +16,7 @@ import {
   ChevronRight,
   Lightbulb,
   FileText,
+  Download,
 } from "lucide-react";
 
 export default function FamiliesGuide() {
@@ -400,6 +401,19 @@ export default function FamiliesGuide() {
                 <MessageCircle className="h-8 w-8 mx-auto mb-2 text-yellow-300" />
                 <div className="font-bold font-arabic">التعبئة الاجتماعية</div>
               </div>
+            </div>
+            {/* Download Guide Button */}
+            <div className="mt-8 flex justify-center">
+              <a
+                href="https://drive.google.com/file/d/1o8u9NUb-FK64F4ewtshySvS7LLLuWFj9/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200 font-arabic"
+              >
+                <Download className="h-5 w-5" />
+                <span>تنزيل الدليل</span>
+              </a>
             </div>
           </div>
         </section>
