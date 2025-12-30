@@ -354,6 +354,19 @@ export default function TeachersGuide() {
                 <div className="font-bold font-arabic">تخطيط الحصص</div>
               </div>
             </div>
+            {/* Download Guide Button */}
+            <div className="mt-8 flex justify-center">
+              <a
+                href="https://www.unicef.org/morocco/media/1481/file/Guide%20Enseignants%20VA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200 font-arabic"
+              >
+                <Download className="h-5 w-5" />
+                <span>تنزيل الدليل</span>
+              </a>
+            </div>
           </div>
         </section>
 
