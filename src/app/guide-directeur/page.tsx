@@ -261,7 +261,7 @@ export default function GuideDirecteur() {
         </section>
 
         {/* Tab Content */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto mouse-pointer">
           {/* الإطار العام للدليل */}
           {activeTab === "overview" && (
             <section className="bg-white rounded-xl shadow-lg p-8 mb-16">
