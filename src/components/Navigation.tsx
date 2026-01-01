@@ -82,6 +82,12 @@ export default function Navigation() {
           description: "القيادة التربوية الدامجة وكفايات المدير",
         },
         {
+          title: "الإطار المرجعي للمنهاج الدراسي",
+          href: "/guide-reference-curseur",
+          icon: BookOpen,
+          description: "إطار مرجعي وطني رسمي للأطفال في وضعية إعاقة",
+        },
+        {
           title: "دليل قاعة الموارد",
           href: "/resources/rehab-support-room",
           icon: FileText,
